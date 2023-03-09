@@ -4,9 +4,11 @@
  */
 package com.uniube.blackjack;
 
+import java.util.Arrays;
+
 /**
  *
- * @author User
+ * @author grupo
  */
 public class Deck {
 
@@ -20,19 +22,18 @@ public class Deck {
         int indexAtualDoBaralho = 0;
         String[] faces = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
         String[] naipes = {"espadas", "copas", "paus", "ouros"};
-        
-        for (int i = 0; i < faces.length; i++) {
-            for (int j = 0; j < naipes.length; j++) {
-                deck[indexAtualDoBaralho++] = new Card(faces[i], naipes[j]);
+       
+        for (String valor : faces) {
+            for (String naipe : naipes ) {
+                deck[indexAtualDoBaralho++] = new Card(valor, naipe);
             }
         }
-
+        
     }
     
-    public void getDeck() {
-        for (Card i : deck) {
-            System.out.println(i);
-        }
+    @Override
+    public String toString() {
+        return Arrays.toString(deck);
     }
 
 }

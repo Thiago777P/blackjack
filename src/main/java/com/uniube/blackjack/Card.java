@@ -6,12 +6,12 @@ package com.uniube.blackjack;
 
 /**
  *
- * @author User
+ * @author grupo
  */
 public class Card {
     
-    private String face;
-    private String naipe;
+    private final String face;
+    private final String naipe;
 
     public Card(String face, String naipe) {
         this.face = face;

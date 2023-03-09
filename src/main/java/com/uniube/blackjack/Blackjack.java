@@ -6,14 +6,14 @@ package com.uniube.blackjack;
 
 /**
  *
- * @author User
+ * @author grupo
  */
 public class Blackjack {
 
     public static void main(String[] args) {
         Deck baralho = new Deck();
         
-        baralho.getDeck();
+        System.out.println(baralho);
         
     }
 }
