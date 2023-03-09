@@ -18,7 +18,6 @@ public class Card {
         this.naipe = naipe;
     }
 
-    //sobrescrever o método toString() [nativo] para mostrar a carta
     @Override 
     public String toString() {
         return face + " de " + naipe;

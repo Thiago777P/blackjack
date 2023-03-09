@@ -5,6 +5,7 @@
 package com.uniube.blackjack;
 
 import java.util.Arrays;
+import java.security.SecureRandom;
 
 /**
  *
@@ -13,22 +14,19 @@ import java.util.Arrays;
 public class Deck {
 
     public static final int NUMERO_DE_CARTAS = 52;
-    private Card[] deck;
-
-    //criar um baralho
+    private final Card[] deck = new Card[NUMERO_DE_CARTAS];
+    SecureRandom random = new SecureRandom();
+    
     public Deck() {
-        
-        deck = new Card[NUMERO_DE_CARTAS];
-        int indexAtualDoBaralho = 0;
+        int index = 0;
         String[] faces = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
         String[] naipes = {"espadas", "copas", "paus", "ouros"};
-       
+ 
         for (String valor : faces) {
             for (String naipe : naipes ) {
-                deck[indexAtualDoBaralho++] = new Card(valor, naipe);
+                deck[index++] = new Card(valor, naipe);
             }
         }
-        
     }
     
     @Override
