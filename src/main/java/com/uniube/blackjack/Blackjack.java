@@ -12,8 +12,6 @@ public class Blackjack {
 
     public static void main(String[] args) {
         Deck baralho = new Deck();
-        
         System.out.println(baralho);
-        
     }
 }
