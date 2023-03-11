@@ -10,5 +10,6 @@ package com.uniube.blackjack;
  */
 public class Dealer {
     private Deck deck;
+    private List<Card> mao;
     
 }
