@@ -9,5 +9,6 @@ package com.uniube.blackjack;
  * @author User
  */
 public class Dealer {
+    private Deck deck;
     
 }
