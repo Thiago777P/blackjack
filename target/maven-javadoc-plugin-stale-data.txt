@@ -1,0 +1,44 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'18'
+-sourcepath
+'C:/Users/User/Documents/NetBeansProjects/blackjack/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/User/Documents/NetBeansProjects/blackjack/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'blackjack 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'blackjack 1.0-SNAPSHOT API'
+com.uniube.blackjack
+C:\Users\User\Documents\NetBeansProjects\blackjack\src\main\java = 1678369728585
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\allclasses-index.html = 1678565035795
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\allpackages-index.html = 1678565035798
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\constant-values.html = 1678565035757
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\copy.svg = 1678565035827
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\element-list = 1678565035739
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\help-doc.html = 1678565035821
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\index-all.html = 1678565035815
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\index.html = 1678565035817
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\jquery-ui.overrides.css = 1678565035868
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\member-search-index.js = 1678565035804
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\module-search-index.js = 1678565035799
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\overview-tree.html = 1678565035782
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\package-search-index.js = 1678565035801
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\script.js = 1678565035825
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\search.js = 1678565035830
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\stylesheet.css = 1678565035823
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\tag-search-index.js = 1678565035805
+C:\Users\User\Documents\NetBeansProjects\blackjack\target\site\apidocs\type-search-index.js = 1678565035802
