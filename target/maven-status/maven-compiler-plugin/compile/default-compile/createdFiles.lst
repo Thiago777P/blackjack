@@ -1,3 +1,6 @@
 com\uniube\blackjack\Blackjack.class
 com\uniube\blackjack\Deck.class
+com\uniube\blackjack\Player$Status.class
+com\uniube\blackjack\Player.class
+com\uniube\blackjack\Dealer.class
 com\uniube\blackjack\Card.class
