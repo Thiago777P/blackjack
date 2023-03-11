@@ -13,19 +13,18 @@ public class Blackjack {
 
     public static void main(String[] args) {
         
-        Deck baralho = new Deck();
+        Deck monte = new Deck();
         Player jogador = new Player();
         Dealer dealer = new Dealer();
+        Card carta = new Card("7","espadas");
         
-        baralho.embaralhar();
-        jogador.adicionarCarta(baralho.distribuir(), 0);
-        jogador.adicionarCarta(baralho.distribuir(), 1);
-        jogador.adicionarCarta(baralho.distribuir(), 2);
+        monte.embaralhar();
+        jogador.adicionarCarta(monte.distribuir(), 0);
+        jogador.adicionarCarta(monte.distribuir(), 1);
+        jogador.adicionarCarta(monte.distribuir(), 2);
         System.out.println(jogador.mostrarCartas());
-        jogador.removerCarta(2);
-        System.out.println(jogador.mostrarCartas());
         
-        
+        System.out.println(carta.getValorCarta(carta)); // baralho[index] <- card
         
     }
 }

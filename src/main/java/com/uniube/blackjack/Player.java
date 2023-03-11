@@ -5,6 +5,7 @@
 package com.uniube.blackjack;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,21 +14,26 @@ import java.util.Arrays;
 public class Player {
    
     private double dinheiroDisp = 100;
-    private Card[] mao = new Card[3];
+    //private Card[] mao = new Card[3];
+    ArrayList<Card> mao = new ArrayList<>();
     
     public void adicionarCarta(Card carta, int index) {
         if (index > 2) {
             System.out.println("Index inválido."); return;
         }
-        mao[index] = carta;
+        mao.add(carta);
     }
     
-    public void removerCarta(int index) {
-        mao[index] = null;
+    public void removerCarta(Card carta) {
+        mao.remove(carta);
+    }
+    
+    public void limparMao() {
+        mao.clear();
     }
     
     public String mostrarCartas() {
-        return Arrays.toString(mao);
+        return mao.toString();
     }
     
     public double getDinheiroDisp(){

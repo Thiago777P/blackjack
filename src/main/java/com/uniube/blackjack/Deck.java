@@ -22,7 +22,6 @@ public class Deck {
         String[] faces = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
         String[] suits = {"espadas", "copas", "paus", "ouros"};
  
-        
         for (String valor : faces) {
             for (String naipe : suits) {
                 deck[index++] = new Card(valor, naipe);
@@ -32,7 +31,6 @@ public class Deck {
     
     //implementacao O(n) Fisher Yates
     public void embaralhar() {
-        
         cartaAtual = 0;
         SecureRandom random = new SecureRandom();
         int lastIndex = deck.length - 1;
@@ -43,7 +41,6 @@ public class Deck {
             deck[randomIndex] = temp;
             lastIndex--;
         }
-        
     }
     
     //distribui uma carta
@@ -54,8 +51,7 @@ public class Deck {
         return deck[cartaAtual++];
     }
     
-    
-    
+
     @Override
     public String toString() {
         return Arrays.toString(deck);
