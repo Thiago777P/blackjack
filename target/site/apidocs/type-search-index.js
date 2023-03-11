@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.uniube.blackjack","l":"Blackjack"},{"p":"com.uniube.blackjack","l":"Card"},{"p":"com.uniube.blackjack","l":"Dealer"},{"p":"com.uniube.blackjack","l":"Deck"},{"p":"com.uniube.blackjack","l":"Player"}];updateSearchResults();
