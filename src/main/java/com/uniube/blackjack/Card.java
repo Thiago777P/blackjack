@@ -17,6 +17,20 @@ public class Card {
         this.face = face;
         this.naipe = naipe;
     }
+    
+    public String getFace() {
+        return this.face;
+    }
+    
+    public int getValorCarta(Card carta){
+        String faceCarta = carta.getFace();
+        int valorCarta;
+        valorCarta = switch (faceCarta) {
+            case "Q", "J", "K" -> 10;
+            default -> Integer.parseInt(faceCarta);
+        };
+        return valorCarta;
+    }
 
     @Override 
     public String toString() {
