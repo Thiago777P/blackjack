@@ -23,9 +23,19 @@ public class Deck {
         String[] naipes = {"espadas", "copas", "paus", "ouros"};
  
         for (String valor : faces) {
-            for (String naipe : naipes ) {
+            for (String naipe : naipes) {
                 deck[index++] = new Card(valor, naipe);
             }
+        }
+    }
+    
+    public void embaralhar() {
+        Card temp;
+        for (int i = 0; i < deck.length; i++) {
+            Card randomPosDeck = deck[random.nextInt(52)];
+            temp = deck[i];
+            deck[i] = randomPosDeck;
+            randomPosDeck = temp;
         }
     }
     
