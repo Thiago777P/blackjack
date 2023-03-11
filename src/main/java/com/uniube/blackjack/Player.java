@@ -17,10 +17,7 @@ public class Player {
     //private Card[] mao = new Card[3];
     ArrayList<Card> mao = new ArrayList<>();
     
-    public void adicionarCarta(Card carta, int index) {
-        if (index > 2) {
-            System.out.println("Index inválido."); return;
-        }
+    public void adicionarCarta(Card carta) {
         mao.add(carta);
     }
     

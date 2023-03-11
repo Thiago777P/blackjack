@@ -16,7 +16,6 @@ public class Deck {
     private final Card[] deck = new Card[NUMERO_DE_CARTAS];
     private int cartaAtual;
     
-    
     public Deck() {
         int index = 0;
         String[] faces = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
@@ -46,12 +45,11 @@ public class Deck {
     //distribui uma carta
     public Card distribuir() {
         if (cartaAtual >= deck.length) {
-            return null;
+            System.out.println("Fim do monte."); return null;
         }
         return deck[cartaAtual++];
     }
     
-
     @Override
     public String toString() {
         return Arrays.toString(deck);
