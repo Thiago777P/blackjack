@@ -6,7 +6,7 @@ package com.uniube.blackjack;
 
 import java.util.Arrays;
 import java.security.SecureRandom;
-
+import java.util.Collections;
 /**
  *
  * @author grupo
@@ -15,28 +15,32 @@ public class Deck {
 
     public static final int NUMERO_DE_CARTAS = 52;
     private final Card[] deck = new Card[NUMERO_DE_CARTAS];
-    SecureRandom random = new SecureRandom();
+    
     
     public Deck() {
         int index = 0;
         String[] faces = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
-        String[] naipes = {"espadas", "copas", "paus", "ouros"};
+        String[] suits = {"espadas", "copas", "paus", "ouros"};
  
         for (String valor : faces) {
-            for (String naipe : naipes) {
+            for (String naipe : suits) {
                 deck[index++] = new Card(valor, naipe);
             }
         }
     }
     
+    //implementacao O(n) Fisher Yates
     public void embaralhar() {
-        Card temp;
-        for (int i = 0; i < deck.length; i++) {
-            Card randomPosDeck = deck[random.nextInt(52)];
-            temp = deck[i];
-            deck[i] = randomPosDeck;
-            randomPosDeck = temp;
+        SecureRandom random = new SecureRandom();
+        int lastIndex = deck.length - 1;
+        while (lastIndex > 0) {
+            int randomIndex = random.nextInt(lastIndex);
+            Card temp = deck[lastIndex];
+            deck[lastIndex] = deck[randomIndex];
+            deck[randomIndex] = temp;
+            lastIndex--;
         }
+        
     }
     
     @Override
