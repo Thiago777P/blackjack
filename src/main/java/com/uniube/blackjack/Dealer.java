@@ -26,6 +26,8 @@ public class Dealer {
                 deck[index++] = new Card(valor, naipe);
             }
         }
+        
+        
     }
     
     //implementacao O(n) Fisher Yates

@@ -4,7 +4,8 @@
 
 package com.uniube.blackjack;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
+
 /**
  *
  * @author grupo
@@ -13,18 +14,17 @@ public class Blackjack {
 
     public static void main(String[] args) {
         
+        Scanner scanner = new Scanner(System.in);
         Dealer dealer = new Dealer();
         Player jogador = new Player();
         
-        Card carta = new Card("Q","espadas");
+        System.out.printf("Dinheiro disponivel: %.2f%n", jogador.getDinheiroDisp());
+        System.out.print("Valor da aposta>> ");
+        double aposta = scanner.nextDouble();
         
-        dealer.embaralhar();
-        jogador.adicionarCarta(dealer.distribuir());
-        jogador.adicionarCarta(dealer.distribuir());
-        jogador.adicionarCarta(dealer.distribuir());
-        System.out.println(jogador.mostrarCartas());
         
-        System.out.println(carta.getValorCarta(carta)); // baralho[index] <- card
+        
+       
         
     }
 }

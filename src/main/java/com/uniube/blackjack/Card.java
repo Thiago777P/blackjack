@@ -10,7 +10,7 @@ package com.uniube.blackjack;
  */
 public class Card {
     
-    private final String face;
+    private final String face; 
     private final String naipe;
 
     public Card(String face, String naipe) {
@@ -31,6 +31,7 @@ public class Card {
         };
         return valorCarta;
     }
+    
 
     @Override 
     public String toString() {
