@@ -15,6 +15,7 @@ public class Dealer {
     public static final int NUMERO_DE_CARTAS = 52;
     private final Card[] deck = new Card[NUMERO_DE_CARTAS];
     private int cartaAtual;
+    ArrayList<Card> maoDealer = new ArrayList<>();
     
     public Dealer() {
         int index = 0;
