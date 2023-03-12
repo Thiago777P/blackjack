@@ -21,7 +21,7 @@ public class Blackjack {
         System.out.printf("Dinheiro disponivel: %.2f%n", jogador.getDinheiroDisp());
         System.out.print("Valor da aposta>> ");
         double aposta = scanner.nextDouble();
-        
+        System.out.println("Teste");
         
         
        
