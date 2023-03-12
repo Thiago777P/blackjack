@@ -36,6 +36,10 @@ public class Player {
         return dinheiroDisp;
     }
     
+    public void subDinheiroDisp(double aposta) {
+        dinheiroDisp-=aposta;
+    }
+    
     
 }
     
